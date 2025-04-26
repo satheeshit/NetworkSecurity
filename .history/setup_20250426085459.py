@@ -33,7 +33,7 @@ setup(
     version="0.0.1",
     author="Satheesh",
     author_email="rsatheeshit@gmail.com",
-    packages=find_packages(),
+    packages=f
     install_requires=get_requirements()
 )
                  

@@ -11,13 +11,12 @@ def get_requirements()->List[str]:
     """
     this function will return list of requirements
     """
-    requirement_lst:List[str]=[]
     try:
         with open('requirements.txt','r')as file:
             #read line from the file
             lines=file.readlines()
             #process each line
-            for line in lines:
+            for line in line:
                 requirement=line.strip()
                 #ignore empty lines and -e .
                 if requirement and requirement!='-e .':
@@ -25,15 +24,4 @@ def get_requirements()->List[str]:
     except FileNotFoundError:
         print("requirements.txt file not found")
         
-    return requirement_lst
-
-
-setup(
-    name="Network Security",
-    version="0.0.1",
-    author="Satheesh",
-    author_email="rsatheeshit@gmail.com",
-    packages=find_packages(),
-    install_requires=get_requirements()
-)
-                 
+     re                  
